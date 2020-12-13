@@ -1,0 +1,72 @@
+{
+    "resourceName": "lexdemoapp",
+    "botName": "hotelbooking",
+    "intents": [
+        {
+            "cancelMessage": "Thanks {firstName} for letting me know, i will go ahead and cancel your request.",
+            "confirmationQuestion": "Dear {firstName} {lastName} Please confirm that you want to reserve a {roomType} room from {startDate} to {endDate} for your trip to  {city} ? Yes | No",
+            "slots": [
+                {
+                    "name": "name",
+                    "type": "AMAZON.US_FIRST_NAME",
+                    "prompt": "Please tell me your first Name",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "firstName",
+                    "type": "AMAZON.US_FIRST_NAME",
+                    "prompt": "Please tell me your first name",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "lastName",
+                    "type": "AMAZON.US_LAST_NAME",
+                    "prompt": "Please provide your last name",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "city",
+                    "type": "AMAZON.US_CITY",
+                    "prompt": "Please tell me what city you are planning to travel.",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "startDate",
+                    "type": "AMAZON.DATE",
+                    "prompt": "What date you need this reservation for",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "endDate",
+                    "type": "AMAZON.DATE",
+                    "prompt": "what date you will be checking out ?",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "roomType",
+                    "type": "AMAZON.Room",
+                    "prompt": "What kind of room you need ?",
+                    "required": true,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "Book a hotel",
+                "book a trip",
+                "plan a trip",
+                "hi"
+            ],
+            "intentName": "hotelbookingintent",
+            "newSlotTypes": []
+        }
+    ],
+    "outputVoice": false,
+    "sessionTimeout": "1",
+    "coppa": false
+}
