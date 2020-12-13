@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 Amplify.configure({
   Auth: {
-    identityPoolId: 'us-east-1:57f7bb3b-40bb-4b51-9bc6-d10e55a02cce',
+    identityPoolId: 'YOUR_ID_POOL',
     region: 'us-east-1'
   },
   Interactions: {
